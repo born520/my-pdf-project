@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹페이지</title>
-    <meta property="og:title" content="웹페이지">
+    <title>Centara Grand Hotel Osaka 2025년 5,6월 요금표</title>
+    <meta property="og:title" content="Centara Grand Hotel Osaka 2025년 5,6월 요금표">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://drive.google.com/thumbnail?id=11GX2RXyotcHgOO6RVZbZYU3F-hIpmTzL">
-    <meta property="og:description" content="웹페이지">
+    <meta property="og:description" content="PDF 문서: Centara Grand Hotel Osaka 2025년 5,6월 요금표">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <style>
         * {
@@ -113,8 +113,8 @@
 
         async function loadPDF(fileId) {
             try {
-                // Vercel 배포 후 얻은 URL로 수정하세요 (아직 모르면 /api/pdf 사용)
-                const pdfUrl = `https://my-pdf-project.vercel.app/api/pdf?fileId=${fileId}`;
+                // Vercel 배포 URL로 수정
+                const pdfUrl = `https://my-pdf-project-git-main-ryus-projects-08ae6cea.vercel.app/api/pdf?fileId=${fileId}`;
                 const response = await fetch(pdfUrl);
                 if (!response.ok) throw new Error('PDF 로딩 실패');
                 const pdfBlob = await response.blob();
@@ -133,7 +133,7 @@
         }
 
         // 파일 ID만 바꾸면 다른 PDF 로드 가능
-        const fileId = '11GX2RXyotcHgOO6RVZbZYU3F-hIpmTzL'; // 원하는 파일 ID로 변경
+        const fileId = '11GX2RXyotcHgOO6RVZbZYU3F-hIpmTzL';
         loadPDF(fileId);
 
         // 페이지 전체에서 스크롤 이벤트 캡처
