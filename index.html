@@ -114,7 +114,7 @@
         async function loadPDF(fileId) {
             try {
                 // Vercel 배포 후 얻은 URL로 수정하세요 (아직 모르면 /api/pdf 사용)
-                const pdfUrl = `/api/pdf?fileId=${fileId}`;
+                const pdfUrl = `https://my-pdf-project.vercel.app/api/pdf?fileId=${fileId}`;
                 const response = await fetch(pdfUrl);
                 if (!response.ok) throw new Error('PDF 로딩 실패');
                 const pdfBlob = await response.blob();
